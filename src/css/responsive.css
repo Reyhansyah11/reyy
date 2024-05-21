@@ -1896,13 +1896,14 @@ textarea {
         position: relative;
         bottom: 20px;
         margin-top: 50px;
-        left: -100px;
     }
 
       /* content left */   
     
     .content-left {
         margin-left: 0px;
+        position: relative;
+        left: -100px;
     }
     
     .about-section .content-left .profile .photo .photo-profile{
