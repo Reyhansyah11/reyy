@@ -1,0 +1,2019 @@
+@media(max-width: 1132px){
+
+    /* hero */
+    
+    .hero-left h1{
+        font-size: 26px;
+    }
+    .hero-left .dis{
+        font-size: 10px;
+    }
+    .hero-left .special{
+        font-size: 11.5px;
+    }
+    .hero-left .special span{
+        font-size: 10px;
+    }
+    .hero-left .special .typing-text{
+        font-size: 9px;
+        position: relative;
+        top: 4px;
+    }
+    .hero-left .btn-primary{
+        font-size: 10px;
+        position: relative;
+        top: 10px;
+    }
+
+
+    .hero-right {
+        left: -50px;
+    }
+    .heroimage1,
+    .heroimage2,
+    .heroimage3{
+        width: 180px;
+        position: absolute;
+        top: 80%; /* Menempatkan gambar di tengah vertikal */
+    }
+
+    /* hero */
+
+    /* experience */
+
+    .experience .information{
+        padding: 30px;
+    }
+    .experience .information .opsi .logo  .fa-solid{
+        font-size: 20px;
+        left: 13px;
+        top: 16px;
+    }
+    .experience .information .opsi p{
+        font-size: 15px;
+    }
+
+    .experience .help h1{
+        font-size: 28px;
+    }
+    .experience .help p{
+        font-size: 12px;
+    }
+    .complate h2,
+.on-going h2{
+    font-size: 28px;
+}
+.box
+.complate p,
+.box
+.on-going p{
+  flex: 1; /* Memungkinkan elemen untuk mengambil ruang yang tersisa */
+  font-size: 10px;
+  font-weight: 500;
+}
+
+    /* experience */
+
+    /* portfolio */
+
+    .section-portfolio .project-content .title .dis{
+        font-size: 14px;
+    }
+    .section-portfolio .project-content .title h1{
+        font-size: 26px;
+        margin-bottom: 5px;
+    }
+    .section-portfolio .project-content .title p{
+        font-size: 15px;
+    }
+
+    .tittle-prc{
+        width: 490px;
+    }
+    .tittle-prc .in-p{
+        font-size: 22px;
+    }
+    .tittle-prc p{
+        font-size: 12px;
+    }
+
+    /* portfolio */
+
+    /* about */
+
+    .about-section .content-left .profile .photo .photo-profile{
+        width: 270px;
+        margin-top: 30px;
+    }
+    .about-section .content-left .profile .info-content{
+        font-size: 13px;
+    }
+    .about-section .content-left .profile .button{
+        font-size: 11px;
+        margin-top: 30px;
+    }
+
+    .content-right .about h1{
+        font-size: 28px;
+    }
+    .content-right .about .icon{
+        font-size: 14px;
+    }
+    .content-right .about .icon .bx{
+        font-size: 14px;
+        position: relative;
+        top: 2px;
+        left: 2px;
+    }
+    .content-right .about .about-me-content p{
+        line-height: 23px;
+        font-size: 12.5px;
+        position: relative;
+        top: 12px;
+    }
+
+    .content-right .roles h1{
+        font-size: 26px;
+    }
+    .content-right .roles .main-apps h3{
+        font-size: 14px;
+    }
+    .content-right .roles .main-apps .AP .app-info h2{
+        font-size: 14px;
+    }
+    .content-right .roles .main-apps .AP .app-info p{
+        font-size: 11px;
+    }
+    .content-right .roles .main-apps .AP .iconify{
+        font-size: 32px;
+    }
+    .content-right .roles .main-apps .AP .app-info.figma{
+        font-size: 32px;
+        margin-left: 42px;
+    }
+
+    .content-right .roles .main-skill{
+        font-size: 28px;
+    }      
+
+    /* about */
+
+    /* footer */
+
+    .footer {
+        font-size: 14px;
+    }
+
+    /* footer */
+
+}
+
+@media (max-width: 991px) {
+
+    .navbar .navbar-logo{
+        font-size: 24px;
+    }
+
+    .navbar .navbar-nav .nav-link:hover {
+        color: var(--primary-sdw);
+    }
+
+    .navbar .navbar-nav .nav-link::after{
+        content: '';
+        display: block;
+        padding-bottom: 0.5rem;
+        font-weight: bold;
+        border-bottom: 0.1rem solid var(--primary-sdw);
+        transform: scaleX(0);
+        transition: 0.3s linear;
+        position: relative;
+        left: -37px;
+    }
+    .navbar .navbar-nav .nav-link:hover::after{
+        transform: scaleX(0.5);
+    }
+
+
+    .navbar .navbar-nav {
+      display: none; /* Hide the original navbar */
+    }
+
+    .navbar-hamburger {
+        display: block;
+    }
+
+    .navbar-nav.active {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 250px;
+        background-color: rgba(228, 228, 228, 0.9);
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+        padding-top: 60px;
+        z-index: 999;
+    }
+
+    .navbar-nav .nav-link {
+        margin: 10px 20px;
+        text-align: left;
+    }
+
+    .close-menu {
+        top: 12px;
+    }
+
+    /* experience */
+
+    .experience .information .opsi{
+        display: flex; /* Mengubah konten menjadi flex container */
+        align-items: center; /* Mengatur elemen secara vertikal di tengah */
+        margin-right: 20px; /* Jarak antara setiap item */
+        background-color: var(--White);
+        color: var(--BLACK);
+        width: 340px;
+        height: 65px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.07);
+        
+    }
+
+    .experience .information .opsi .logo{
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background-color: var(--black-90);
+        position: relative;
+        left: 30px;
+        color: var(--White);
+    }
+    .experience .information .opsi .logo .fa-solid {
+        position: absolute;
+        top: 15px;
+        left: 14px;
+        font-size: 16px;
+    }
+    .experience .information .opsi .logo .fa-brands{
+        position: absolute;
+        top: 13px;
+        left: 16px;
+        font-size: 18px;
+    }
+    .experience .information{
+        padding: 30px;
+    }
+    .experience .information .opsi p{
+        font-size: 11px;
+    }
+
+    .experience .help h1{
+        font-size: 24px;
+        left: -30px;
+    }
+    .experience .help p{
+        font-size: 11px;
+    }
+    .complate h2,
+.on-going h2{
+    font-size: 26px;
+}
+.box
+.complate p,
+.box
+.on-going p{
+  flex: 1; /* Memungkinkan elemen untuk mengambil ruang yang tersisa */
+  font-size: 10px;
+  font-weight: 500;
+}
+
+    /* experience */
+
+        /* portfolio */
+        .section-portfolio .project-content .explore{
+            position: relative;
+            top: 115px;
+            left: 130px;
+        }
+
+        .project{
+            position: relative;
+            left: -70px;
+        }
+        .mini-games {
+            position: absolute;
+            bottom: 150px;
+            right: 390px;
+            padding-top: 160px;
+        }
+
+        .section-portfolio .project-content .title .dis{
+            font-size: 10px;
+        }
+        .section-portfolio .project-content .title h1{
+            font-size: 22px;
+            margin-bottom: 5px;
+        }
+        .section-portfolio .project-content .title p{
+            font-size: 12px;
+        }
+    
+        .tittle-prc{
+            width: 420px;
+        }
+        .tittle-prc .in-p{
+            font-size: 20px;
+        }
+        .tittle-prc p{
+            font-size: 10px;
+        }
+
+        .prcss-box h1{
+            font-size: 12px;
+        }
+        .prcss-box p{
+            font-size: 9px;
+        }
+
+        
+    .box-content {
+        width: 240px;
+        height: 340px;
+    }
+    
+        /* portfolio */
+
+
+        .about-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start; /* Menyesuaikan konten agar sejajar pada bagian atas */
+            color: var(--White); 
+            position: relative;
+            bottom: 70px;
+        }
+
+          /* content left */          
+        .content-left {
+            width: 50%;
+            padding: 20px;
+        }
+        .about-section .content-left .profile .photo .photo-profile{
+            width: 290px;
+            position: relative;
+            top: -20px;
+        }
+        .about-section .content-left .profile .info-content{
+            font-size: 11px;
+            position: relative;
+            top: -20px;
+        }
+        .about-section .content-left .profile .info-content .gmail:hover{
+            color: var(--primary-sdw);
+        }
+        .about-section .content-left .profile .button{
+            margin-top: 10px;
+            font-size: 8px;
+        }      
+          /* content left */
+
+        /* content right */
+        
+        .content-right .about h1{
+            font-size: 24px;
+        }
+        .content-right .about .icon{
+            font-size: 12px;
+        }
+        .content-right .about .icon .bx{
+            font-size: 12px;
+            position: relative;
+            top: 2px;
+            left: 2px;
+        }
+        .content-right .about .about-me-content p{
+            line-height: 20px;
+            font-size: 10px;
+            position: relative;
+            top: 12px;
+        }
+    
+        .content-right .roles h1{
+            font-size: 22px;
+        }
+        .content-right .roles .main-apps h3{
+            font-size: 12px;
+        }
+        .content-right .roles .main-apps .AP .app-info h2{
+            font-size: 12px;
+        }
+        .content-right .roles .main-apps .AP .app-info p{
+            font-size: 10px;
+        }
+        .content-right .roles .main-apps .AP .iconify{
+            font-size: 28px;
+            margin-left: 5px;
+        }
+        .content-right .roles .main-apps .AP .app-info.figma{
+            font-size: 28px;
+            margin-left: 42px;
+        }
+    
+        .content-right .roles .main-skill{
+            font-size: 20px;
+        }      
+
+        /* content right */
+
+
+        .profile,
+        .about,
+        .roles {
+            width: 100%;
+            height: 260px; 
+            background-color: var(--secondary-color); 
+            margin-bottom: 20px; 
+            border-radius: 10px; 
+        }
+        .profile {
+            height: 540px;
+        }
+
+
+        /* contact */
+
+        .head{
+            top: -64px;
+            left: 41%;
+        }
+
+
+        .container{
+            max-width: 860px;
+        }
+
+        /* contact */
+
+}
+
+@media(max-width: 767px){
+
+    .navbar .navbar-logo{
+        font-size: 16px;
+    }
+
+    /* hero */
+
+    .hero-left {
+        right: -10px;
+    }
+    .hero-left h1{
+        font-size: 21px;
+    }
+    .hero-left .dis{
+        font-size: 9px;
+    }
+    .hero-left .special{
+        font-size: 11.5px;
+    }
+    .hero-left .special span{
+        font-size: 9px;
+    }
+    .hero-left .special .typing-text{
+        font-size: 8px;
+        position: relative;
+        top: 3px;
+    }
+    .hero-left .btn-primary{
+        font-size: 9px;
+        position: relative;
+        top: 10px;
+    }
+
+
+    .hero-right {
+        left: -30px;
+    }
+    .heroimage1,
+    .heroimage2,
+    .heroimage3{
+        width: 160px;
+        position: absolute;
+        top: 80%; /* Menempatkan gambar di tengah vertikal */
+    }
+    .heroimage1 {
+        left: 20px;
+    }
+    .heroimage3 {
+        right: 20px;
+    }
+
+    /* hero */
+
+    /* experience */
+
+    .experience .information{
+        right: -10px;
+        top: 10px;
+    }
+
+    .experience .information .opsi{
+        width: 260px;
+        height: 60px;
+    }
+
+    .experience .information .opsi .logo{
+        width: 45px;
+        height: 40px;
+    }
+    .experience .information .opsi .logo .fa-solid {
+        position: absolute;
+        top: 14px;
+        left: 14px;
+        font-size: 15px;
+    }
+    .experience .information .opsi .logo .fa-brands{
+        position: absolute;
+        top: 13px;
+        left: 16px;
+        font-size: 18px;
+    }
+    .experience .information{
+        padding: 20px;
+    }
+    .experience .information .opsi p{
+        margin-left: 70px;
+        font-size: 10px;
+    }
+    .experience .information .opsi p span{
+        display: none;
+    }
+
+    .experience .help{
+        top: 10px;
+        left: -50px;
+        flex: 1.9;
+    }
+    .experience .help h1{
+        font-size: 20px;
+        left: -5px;
+        top: 10px;
+    }
+    .experience .help p{
+        font-size: 9.5px;
+        position: relative;
+        left: 14px;
+    }
+    .complate h2,
+.on-going h2{
+    font-size: 22px;
+    position: relative;
+    left: 15px;
+}
+.box
+.complate p,
+.box
+.on-going p{
+  flex: 1; /* Memungkinkan elemen untuk mengambil ruang yang tersisa */
+  font-size: 8px;
+  font-weight: 500;
+  position: relative;
+  left: 15px;
+}
+
+    /* experience */
+
+    /* portfolio */
+    .section-portfolio .project-content .explore{
+        position: relative;
+        top: 115px;
+        left: 110px;
+        font-size: 10px;
+    }
+
+    .project{
+        position: relative;
+        left: -10px;
+        top: -100px;
+    }
+    .mini-games {
+        position: absolute;
+        bottom: 150px;
+        right: 290px;
+        padding-top: 130px;
+    }
+
+    .section-portfolio .project-content .title .dis{
+        font-size: 9px;
+        margin-bottom: 10px;
+    }
+    .section-portfolio .project-content .title h1{
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    .section-portfolio .project-content .title p{
+        font-size: 10px;
+    }
+
+    .tittle-prc{
+        width: 340px;
+        margin-top: 20px;
+    }
+    .tittle-prc .in-p{
+        font-size: 16px;
+    }
+    .tittle-prc p{
+        font-size: 9px;
+    }
+
+    .prcss-box h1{
+        font-size: 10px;
+    }
+    .prcss-box p{
+        font-size: 8px;
+    }
+
+    
+.box-content {
+    width: 180px;
+    height: 280px;
+}
+
+.work-prcss {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tiga kolom */
+    gap: 20px; /* Jarak antar elemen */
+    padding: 0 20px; /* Padding untuk kontainer */
+  }
+  .prcss-box {
+    width: 100%; /* Lebar penuh dalam grid */
+    margin: 0; /* Menghapus margin karena grid gap sudah mengatur jarak */
+  }
+  .prcss-box:nth-child(4) {
+    grid-column: 1; /* Elemen ke-4 mengambil dua kolom */
+  }
+  .prcss-box:nth-child(5) {
+    grid-column: 3; /* Elemen ke-5 berada di kolom ketiga */
+  }
+
+
+
+    /* portfolio */
+
+    .about-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start; /* Menyesuaikan konten agar sejajar pada bagian atas */
+        color: var(--White); 
+        position: relative;
+        bottom: 70px;
+    }
+
+      /* content left */          
+    .content-left {
+        width: 50%;
+        padding: 20px;
+
+    }
+    .about-section .content-left .profile .photo .photo-profile{
+        width: 180px;
+        position: relative;
+        top: 10px;
+    }
+    .about-section .content-left .profile .info-content{
+        font-size: 8px;
+        position: relative;
+        top: -15px;
+    }
+    .about-section .content-left .profile .info-content .gmail:hover{
+        color: var(--primary-sdw);
+    }
+    .about-section .content-left .profile .button{
+        margin-top: 6px;
+        font-size: 6px;
+    }      
+      /* content left */
+
+    /* content right */
+    
+    .content-right .about h1{
+        font-size: 18px;
+    }
+    .content-right .about .icon{
+        font-size: 10px;
+    }
+    .content-right .about .icon .bx{
+        font-size: 10px;
+        position: relative;
+        top: 2px;
+        left: 2px;
+    }
+    .content-right .about .about-me-content p{
+        line-height: 12px;
+        font-size: 7px;
+        position: relative;
+        top: -5px;
+        margin-bottom: 8px;
+    }
+
+
+    .content-right .roles .skill h3{
+        font-size: 9px;
+        margin-bottom: 10px;
+        margin-top: 15px;
+    }
+    .content-right .roles h1{
+        font-size: 16px;
+        margin-bottom: 8px;
+        position: relative;
+        top: -5px;
+    }
+    .content-right .roles .main-apps h3{
+        font-size: 9px;
+        margin-bottom: 10px;
+    }
+    .content-right .roles .main-apps .AP .app-info h2{
+        font-size: 8px;
+    }
+    .content-right .roles .main-apps .AP .app-info p{
+        font-size: 7px;
+    }
+    .content-right .roles .main-apps .AP .iconify{
+        font-size: 20px;
+        margin-left: 3px;
+    }
+    .content-right .roles .main-apps .AP .app-info.figma{
+        font-size: 22px;
+        margin-left: 38px;
+    }
+
+    .content-right .roles .main-skill{
+        font-size: 14px;
+        position: relative;
+        left: -10px;
+        top: -2px;
+    }      
+
+    /* content right */
+
+
+    .profile,
+    .about,
+    .roles {
+        width: 100%;
+        height: 200px; 
+        background-color: var(--secondary-color); 
+        margin-bottom: 20px; 
+        border-radius: 10px; 
+    }
+    .profile {
+        height: 420px;
+    }
+
+     /* contact */
+
+     .head{
+        position: absolute;
+        top: -3%;
+        left: 28%;
+        font-size: 12px;
+        height: 25px;
+        width: 280px;
+    }
+
+
+    .container{
+        max-width: 640px;
+        position: relative;
+        top: 140px;
+    }
+
+    .contact-item {
+        position: relative;
+        top: 75px;
+        margin-left: 10px;
+        right: -10px;
+        width: 180px;
+    }
+
+    
+.contact-item h3 {
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .contact-item p{
+    font-size: 9px;
+  }
+
+  .a-con{
+    width: 40px;
+    height: 40px;
+  }
+  .a-con .fas{
+    font-size: 18px;
+    position: relative;
+    bottom: 3px;
+  }
+  form input{
+    margin-top: 10px;
+    height: 35px;
+  }
+  input,
+textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  height: 60px;
+}
+
+.right {
+    position: relative;
+    right: 20px;
+  }
+
+.right h2{
+    font-size: 18px;
+    top: 25px;
+  }
+
+  .left {
+    position: relative;
+    top: -5px;
+  }
+
+  .button-1{
+    padding: 5px 10px;
+  }
+
+    /* contact */
+
+    .footer {
+        position: relative;
+        top: 48px;
+    }
+
+
+    /* services */
+    .boxx {
+        width: 200px;
+        height: 200px;
+    }
+    .s-icon i {
+        top: 50px;
+    }
+    .boxx h3 {
+        top: 70px;
+    }
+    /* services */
+
+    /*main project*/
+
+    .portfolio-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        min-height: 100vh;
+        position: relative;
+        top: 20px;
+        margin-bottom: -30px;
+      }
+
+    .portfolio-content .row img {
+        width: 100%;
+        height: 15rem;
+        border-radius: 8px;
+        display: block;
+        transition: transform 0.5s;
+      }
+      .layer {
+        width: 100%;
+        height: 0;
+        background: linear-gradient(rgba(0, 0, 0, 0.1), #0075FF);
+        position: absolute;
+        border-radius: 8px;
+        left: 0;
+        bottom: 0;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0 40px;
+        transition: height 0.5s;
+      }
+      .pjk {
+        width: 280px; /* Atur lebar elemen */
+        height: 280px; /* Atur tinggi elemen */
+        position: relative;
+        left: 38px;
+      }
+      
+      
+    /*main project*/
+
+}
+
+
+
+@media(max-width: 500px){
+
+    /* hero */
+    .hero-section {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 70px; /* Kurangi margin atas */
+        padding: 10px;
+      }
+    
+
+    .hero-left {
+        flex-grow: 1; /* Menggunakan flex-grow untuk memungkinkan hero-left memenuhi ruang yang tersedia */
+    padding: 5px;
+    margin: 0;
+    text-align: center;
+    position: static; /* Hapus posisi absolut */
+    display: flex;
+    position: relative;
+    top: 55px;
+    right: 5px;
+    margin-bottom: 50px;
+    flex-direction: column;
+    align-items: center; /* Memastikan konten berada di tengah secara horizontal */
+    justify-content: center; /* Memastikan konten berada di tengah secara vertikal */
+    }
+    .hero-left h1{
+        font-size: 16px;
+    }
+    .hero-left .dis{
+        font-size: 8px;
+    }
+    .hero-left .special{
+        font-size: 11.5px;
+    }
+    .hero-left .special span{
+        font-size: 9px;
+    }
+    .hero-left .special .typing-text{
+        letter-spacing: .15em;
+        animation: typing 3s steps(20, end), blink-caret .75s step-end infinite;
+        position: relative;
+        top: 3px;
+        font-size: 8px;
+      }
+      @keyframes typing {
+        from { width: 0 }
+        to { width: 40% }
+      }
+      
+      @keyframes blink-caret {
+        from, to { border-color: transparent }
+      }
+    .hero-left .btn-primary{
+        font-size: 7px;
+        position: relative;
+        top: 10px;
+    }
+
+
+    .hero-right {
+        display: none;
+    }
+    /* hero */
+
+    /* experience */
+
+    .experience{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 80px; /* Kurangi margin atas */
+        padding: 10px;
+        display: flex;
+    }
+
+    .experience .information{
+        display: none;
+    }
+
+    .experience .help{
+        padding: 5px;
+        margin: 0;
+        text-align: center;
+        position: static; /* Hapus posisi absolut */
+        display: flex;
+        position: relative;
+        top: 65px;
+        flex-direction: column;
+        align-items: center; /* Memastikan konten berada di tengah secara horizontal */
+        justify-content: center; /* Memastikan konten berada di tengah secara vertikal */
+        top: 10px;
+        left: -15px;
+    }
+    .experience .help h1{
+        font-size: 16px;
+        left: 15px;
+        top: 10px;
+    }
+    .experience .help p{
+        font-size: 8px;
+        position: relative;
+        left: 14px;
+    }
+    .complate h2,
+.on-going h2{
+    display: none;
+}
+.box
+.complate p,
+.box
+.on-going p{
+  display: none;
+}
+
+    /* experience */
+
+    /* portfolio */
+
+    .section-portfolio{
+        display: grid;
+    }
+
+    .section-portfolio .project-content .explore{
+        position: relative;
+        top: -40px;
+        left: -10px;
+        font-size: 10px;
+    }
+
+    .tittle-prc{
+        display: none
+    }
+
+    .project{
+        display: none;
+    }
+
+    .section-portfolio .project-content .title {
+        width: 310px;
+        position: relative;
+        left: -10px;
+        top: -60px;
+    }
+    
+    .section-portfolio .project-content .title .dis{
+        font-size: 8px;
+        margin-bottom: 10px;
+    }
+    .section-portfolio .project-content .title h1{
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    .section-portfolio .project-content .title p{
+        font-size: 8.5px;
+    }
+
+    .mini-games {
+        font-size: 14px;
+    }
+    .big-project {
+        font-size: 14px;
+    }
+    
+    .comingsoon {
+        font-size: 1px; 
+    }
+
+
+.work-prcss {
+    display: none
+  }
+
+
+
+
+    /* portfolio */
+
+    .about-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start; /* Menyesuaikan konten agar sejajar pada bagian atas */
+        color: var(--White); 
+        position: relative;
+        bottom: 20px;
+        margin-top: 50px;
+    }
+
+      /* content left */          
+    .content-left {
+        width: 50%;
+        padding: 20px;
+        margin-left: 35px;
+    }
+    .about-section .content-left .profile .photo .photo-profile{
+        width: 160px;
+        position: relative;
+        top: -10px;
+        padding-right: 7px;
+    }
+    .about-section .content-left .profile .info-content{
+        font-size: 6px;
+        position: relative;
+        top: -25px;
+    }
+    .about-section .content-left .profile .info-content .gmail:hover{
+        color: var(--primary-sdw);
+    }
+    .about-section .content-left .profile .button{
+        position: relative;
+        top: -10px;
+        font-size: 4px;
+    }      
+      /* content left */
+
+    /* content right */
+    
+
+    .content-right .about{
+        padding: 10px;
+    }
+    
+    .content-right .about h1{
+        font-size: 12px;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+    .content-right .about .icon{
+        font-size: 8px;
+        padding-left: 7px;
+        margin-bottom: 20px;
+        position: relative;
+        top: -3px;
+    }
+    .content-right .about .icon .bx{
+        font-size: 8px;
+        position: relative;
+        top: 1px;
+        left: 2px;
+    }
+    .content-right .about .about-me-content p{
+        line-height: 8px;
+        font-size: 5px;
+        position: relative;
+        top: -3px;
+        margin-bottom: 6px;
+        padding-left: 5px;
+    }
+
+
+    .content-right .roles{
+        padding: 20px;
+        padding-left: 25px;
+        padding-right: 0px;
+    }
+
+    .content-right .roles .skill h3{
+        font-size: 7px;
+        margin-bottom: 10px;
+        margin-top: 15px;
+    }
+    .content-right .roles h1{
+        font-size: 10px;
+        margin-bottom: 3px;
+        top: -5px;
+    }
+    .content-right .roles .main-apps h3{
+        font-size: 7px;
+        margin-bottom: 10px;
+    }
+    .content-right .roles .main-apps .AP .app-info h2{
+        font-size: 5px;
+    }
+    .content-right .roles .main-apps .AP .app-info p{
+        font-size: 4px;
+    }
+    .content-right .roles .main-apps .AP .iconify{
+        font-size: 12px;
+        margin-left: 3px;
+    }
+    .content-right .roles .main-apps .AP .app-info.figma{
+        font-size: 22px;
+        margin-left: 34px;
+    }
+
+    .content-right .roles .main-skill{
+        font-size: 10px;
+        position: relative;
+        left: -5px;
+        top: -2px;
+        margin: 0px 4px;
+    }      
+
+    /* content right */
+
+
+    .profile,
+    .about,
+    .roles {
+        width: 100%;
+        height: 160px; 
+        background-color: var(--secondary-color); 
+        margin-bottom: 20px; 
+        border-radius: 10px; 
+    }
+    .profile {
+        height: 340px;
+        position: relative;
+        left: 20px;
+    }
+    .about,
+    .roles {
+        width: 160px;
+    }
+
+     /* contact */
+
+    .sec-contact{
+        height: 100vh;
+    }
+
+     .head{
+        position: absolute;
+        top: -4%;
+        left: 35%;
+        font-size: 8px;
+        width: 100px;
+        height: 22px;
+    }
+
+
+    .container{
+        max-width: 340px;
+        position: relative;
+        top: 140px;
+        height: 300px;
+    }
+
+    .left {
+        padding-right: 5px;
+        position: relative;
+        left: 20px;
+    }
+    .right {
+        padding-left: 5px;
+        position: relative;
+        left: 20px;
+    }
+
+   
+    .contact-item {
+        position: relative;
+        top: 55px;
+        margin-left: 10px;
+        right: 20px;
+        width: 80px;
+        margin-bottom: 20px;
+    }
+
+    
+.contact-item h3 {
+    font-size: 7px;
+    font-weight: 600;
+  }
+  .contact-item p{
+    font-size: 4px;
+  }
+
+  .a-con{
+    width: 30px;
+    height: 30px;
+  }
+  .a-con .fas{
+    font-size: 12px;
+    position: relative;
+    bottom: 8px;
+  }
+  form input{
+    margin-top: 5px;
+    height: 25px;
+    width: 120px;
+  }
+  input,
+textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  height: 40px;
+  width: 120px;
+  font-size: 8px;
+}
+.right h2{
+    font-size: 12px;
+    top: 25px;
+  }
+
+  .left {
+    position: relative;
+    top: -5px;
+  }
+
+  .button-1{
+    padding: 4px 8px;
+    font-size: 10px;
+  }
+
+    /* contact */
+
+    .footer {
+        position: relative;
+        top: 98px;
+        padding: 10px;
+    }
+    .footer p{
+        font-size: 10px;
+    }
+
+
+    /* services */
+    .services-content {
+        gap: 1rem;
+    }
+
+    .boxx {
+        width: 140px;
+        height: 140px;
+    }
+    .s-icon i {
+        top: 30px;
+        font-size: 22px;
+    }
+    .boxx h3 {
+        top: 50px;
+        font-size: 13px;
+    }
+    /* services */
+
+    /*main project*/
+
+    .portfolio-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+        align-items: center;
+        justify-content: center;
+        gap: 1px;
+        min-height: 100vh;
+        position: relative;
+        top: 20px;
+        margin-bottom: -30px;
+        margin-top: 150px;
+      }
+
+    .portfolio-content .row{
+        width: 70%;
+        height: 12rem;
+    }
+
+
+    .portfolio-content .row img {
+        width: 100%;
+        height: 15rem;
+        border-radius: 8px;
+        display: block;
+        transition: transform 0.5s;
+      }
+      .layer {
+        width: 100%;
+        height: 0;
+        background: linear-gradient(rgba(0, 0, 0, 0.1), #0075FF);
+        position: absolute;
+        border-radius: 8px;
+        left: 0;
+        bottom: 0;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0 40px;
+        transition: height 0.5s;
+      }
+      .pjk {
+        width: 280px; /* Atur lebar elemen */
+        height: 280px; /* Atur tinggi elemen */
+        position: relative;
+        left: 58px;
+      }
+      
+      
+    /*main project*/
+
+}
+
+
+
+@media(max-width: 397px){
+
+    .close-menu  {
+        top: 7px;
+    }
+    /* hero */
+    .hero-section {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 70px; /* Kurangi margin atas */
+        padding: 10px;
+      }
+    
+
+    .hero-left {
+        flex-grow: 1; /* Menggunakan flex-grow untuk memungkinkan hero-left memenuhi ruang yang tersedia */
+    padding: 5px;
+    margin: 0;
+    text-align: center;
+    position: static; /* Hapus posisi absolut */
+    display: flex;
+    position: relative;
+    top: 55px;
+    right: 5px;
+    margin-bottom: 50px;
+    flex-direction: column;
+    align-items: center; /* Memastikan konten berada di tengah secara horizontal */
+    justify-content: center; /* Memastikan konten berada di tengah secara vertikal */
+    }
+    .hero-left h1{
+        font-size: 16px;
+    }
+    .hero-left .dis{
+        font-size: 8px;
+    }
+    .hero-left .special{
+        font-size: 11.5px;
+    }
+    .hero-left .special span{
+        font-size: 9px;
+    }
+    .hero-left .special .typing-text{
+        letter-spacing: .15em;
+        animation: typing 3s steps(20, end), blink-caret .75s step-end infinite;
+        position: relative;
+        top: 3px;
+        font-size: 8px;
+      }
+      @keyframes typing {
+        from { width: 0 }
+        to { width: 40% }
+      }
+      
+      @keyframes blink-caret {
+        from, to { border-color: transparent }
+      }
+    .hero-left .btn-primary{
+        font-size: 7px;
+        position: relative;
+        top: 10px;
+    }
+
+
+    .hero-right {
+        display: none;
+    }
+    /* hero */
+
+    /* experience */
+
+    .experience{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 80px; /* Kurangi margin atas */
+        padding: 10px;
+        display: flex;
+    }
+
+    .experience .information{
+        display: none;
+    }
+
+    .experience .help{
+        padding: 5px;
+        margin: 0;
+        text-align: center;
+        position: static; /* Hapus posisi absolut */
+        display: flex;
+        position: relative;
+        top: 65px;
+        flex-direction: column;
+        align-items: center; /* Memastikan konten berada di tengah secara horizontal */
+        justify-content: center; /* Memastikan konten berada di tengah secara vertikal */
+        top: 10px;
+        left: -15px;
+    }
+    .experience .help h1{
+        font-size: 16px;
+        left: 15px;
+        top: 10px;
+    }
+    .experience .help p{
+        font-size: 8px;
+        position: relative;
+        left: 14px;
+    }
+    .complate h2,
+.on-going h2{
+    display: none;
+}
+.box
+.complate p,
+.box
+.on-going p{
+  display: none;
+}
+
+    /* experience */
+
+    /* portfolio */
+
+    .section-portfolio{
+        display: grid;
+    }
+
+    .section-portfolio .project-content .explore{
+        position: relative;
+        top: -40px;
+        left: -10px;
+        font-size: 10px;
+    }
+
+    .tittle-prc{
+        display: none
+    }
+
+    .project{
+        display: none;
+    }
+
+    .section-portfolio .project-content .title {
+        width: 310px;
+        position: relative;
+        left: -10px;
+        top: -60px;
+    }
+    
+    .section-portfolio .project-content .title .dis{
+        font-size: 8px;
+        margin-bottom: 10px;
+    }
+    .section-portfolio .project-content .title h1{
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    .section-portfolio .project-content .title p{
+        font-size: 8.5px;
+    }
+
+
+.work-prcss {
+    display: none
+  }
+
+
+
+
+    /* portfolio */
+
+    .about-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start; /* Menyesuaikan konten agar sejajar pada bagian atas */
+        color: var(--White); 
+        position: relative;
+        bottom: 20px;
+        margin-top: 50px;
+    }
+
+      /* content left */          
+    .content-left {
+        width: 50%;
+        padding: 20px;
+        margin-left: -5px;
+    }
+    .about-section .content-left .profile .photo .photo-profile{
+        width: 160px;
+        position: relative;
+        left: 15px;
+        top: -10px;
+        padding-right: 7px;
+    }
+    .about-section .content-left .profile .info-content{
+        font-size: 6px;
+        position: relative;
+        top: -25px;
+    }
+    .about-section .content-left .profile .info-content .gmail:hover{
+        color: var(--primary-sdw);
+    }
+    .about-section .content-left .profile .button{
+        position: relative;
+        top: -10px;
+        font-size: 4px;
+    }      
+      /* content left */
+
+    /* content right */
+
+    .content-right {
+        margin-right: 0px;
+    }
+
+    .content-right .about{
+        padding: 10px;
+    }
+    
+    .content-right .about h1{
+        font-size: 12px;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+    .content-right .about .icon{
+        font-size: 8px;
+        padding-left: 7px;
+        margin-bottom: 20px;
+        position: relative;
+        top: -3px;
+    }
+    .content-right .about .icon .bx{
+        font-size: 8px;
+        position: relative;
+        top: 1px;
+        left: 2px;
+    }
+    .content-right .about .about-me-content p{
+        line-height: 8px;
+        font-size: 5px;
+        position: relative;
+        top: -3px;
+        margin-bottom: 6px;
+        padding-left: 5px;
+    }
+
+
+    .content-right .roles{
+        padding: 20px;
+        padding-left: 25px;
+        padding-right: 0px;
+    }
+
+    .content-right .roles .skill h3{
+        font-size: 7px;
+        margin-bottom: 10px;
+        margin-top: 15px;
+    }
+    .content-right .roles h1{
+        font-size: 10px;
+        margin-bottom: 3px;
+        top: -5px;
+    }
+    .content-right .roles .main-apps h3{
+        font-size: 7px;
+        margin-bottom: 10px;
+    }
+    .content-right .roles .main-apps .AP .app-info h2{
+        font-size: 5px;
+    }
+    .content-right .roles .main-apps .AP .app-info p{
+        font-size: 4px;
+    }
+    .content-right .roles .main-apps .AP .iconify{
+        font-size: 12px;
+        margin-left: 3px;
+    }
+    .content-right .roles .main-apps .AP .app-info.figma{
+        font-size: 22px;
+        margin-left: 34px;
+    }
+
+    .content-right .roles .main-skill{
+        font-size: 10px;
+        position: relative;
+        left: -5px;
+        top: -2px;
+        margin: 0px 4px;
+    }      
+
+    /* content right */
+
+
+    .profile,
+    .about,
+    .roles {
+        width: 100%;
+        height: 160px; 
+        background-color: var(--secondary-color); 
+        margin-bottom: 20px; 
+        border-radius: 10px; 
+    }
+    .profile {
+        height: 340px;
+        position: relative;
+        left: 10px;
+    }
+
+     /* contact */
+
+    .sec-contact{
+        height: 100vh;
+    }
+
+     .head{
+        position: absolute;
+        top: -4%;
+        left: 35%;
+        font-size: 8px;
+        width: 100px;
+        height: 22px;
+    }
+
+
+    .container{
+        max-width: 340px;
+        position: relative;
+        top: 140px;
+        height: 300px;
+    }
+
+    .left {
+        padding-right: 5px;
+        position: relative;
+        left: 20px;
+    }
+    .right {
+        padding-left: 5px;
+        position: relative;
+        right: 30px;
+        top: -20px;
+    }
+
+    .contact-item {
+        margin-bottom: 15px;
+        top: 52px;
+        margin-left: 00px;
+        width: 80px;
+    }
+
+    
+.contact-item h3 {
+    font-size: 7px;
+    font-weight: 600;
+  }
+  .contact-item p{
+    font-size: 4px;
+  }
+
+  .a-con{
+    width: 30px;
+    height: 30px;
+  }
+  .a-con .fas{
+    font-size: 12px;
+    position: relative;
+    bottom: 8px;
+  }
+  form input{
+    margin-top: 5px;
+    height: 25px;
+    width: 140px;
+  }
+  input,
+textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  height: 40px;
+  width: 140px;
+  font-size: 8px;
+}
+.right h2{
+    font-size: 12px;
+    top: 25px;
+  }
+
+  .left {
+    position: relative;
+    top: -5px;
+  }
+
+  .button-1{
+    padding: 4px 8px;
+    font-size: 9px;
+  }
+
+    /* contact */
+
+    .footer {
+        position: relative;
+        top: 48px;
+        padding: 10px;
+    }
+    .footer p{
+        font-size: 10px;
+    }
+
+
+    .services-content {
+        gap: 1rem;
+    }
+
+    .boxx {
+        width: 100px;
+        height: 100px;
+    }
+    .s-icon i {
+        top: 20px;
+        font-size: 16px;
+    }
+    .boxx h3 {
+        top: 35px;
+        font-size: 6px;
+    }
+    /* services */
+
+    /*main project*/
+
+    .portfolio-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        min-height: 100vh;
+        position: relative;
+        top: 20px;
+        margin-bottom: -30px;
+      }
+
+    .portfolio-content .row img {
+        width: 100%;
+        height: 15rem;
+        border-radius: 8px;
+        display: block;
+        transition: transform 0.5s;
+      }
+      .layer {
+        width: 100%;
+        height: 0;
+        background: linear-gradient(rgba(0, 0, 0, 0.1), #0075FF);
+        position: absolute;
+        border-radius: 8px;
+        left: 0;
+        bottom: 0;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0 40px;
+        transition: height 0.5s;
+      }
+      .pjk {
+        width: 280px; /* Atur lebar elemen */
+        height: 280px; /* Atur tinggi elemen */
+        position: relative;
+        left: 78px;
+      }
+      
+      
+    /*main project*/
+
+}
+
+@media(max-width: 362px){
+    .about-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start; /* Menyesuaikan konten agar sejajar pada bagian atas */
+        color: var(--White); 
+        position: relative;
+        bottom: 20px;
+        margin-top: 50px;
+    }
+
+      /* content left */          
+    .about-section .content-left .profile .photo .photo-profile{
+        width: 140px;
+        position: relative;
+        left: 15px;
+        top: -10px;
+    }
+    .about-section .content-left .profile .info-content{
+        font-size: 6px;
+        position: relative;
+        top: -25px;
+    }
+    .about-section .content-left .profile .info-content .gmail:hover{
+        color: var(--primary-sdw);
+    }
+    .about-section .content-left .profile .button{
+        position: relative;
+        top: -10px;
+        font-size: 4px;
+    }      
+      /* content left */
+
+    /* content right */
+
+    .content-right {
+        margin-right: 0px;
+    }
+
+    .content-right .about{
+        padding: 10px;
+    }
+    
+    .content-right .about h1{
+        font-size: 12px;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+    .content-right .about .icon{
+        font-size: 8px;
+        padding-left: 7px;
+        margin-bottom: 20px;
+        position: relative;
+        top: -3px;
+    }
+    .content-right .about .icon .bx{
+        font-size: 8px;
+        position: relative;
+        top: 1px;
+        left: 2px;
+    }
+    .content-right .about .about-me-content p{
+        line-height: 8px;
+        font-size: 5px;
+        position: relative;
+        top: -3px;
+        margin-bottom: 6px;
+        padding-left: 5px;
+    }
+
+
+    .content-right .roles{
+    }
+
+    .content-right .roles .skill h3{
+        font-size: 7px;
+        margin-bottom: 10px;
+        margin-top: 15px;
+    }
+    .content-right .roles h1{
+        font-size: 10px;
+        margin-bottom: 3px;
+        top: -5px;
+    }
+    .content-right .roles .main-apps h3{
+        font-size: 7px;
+        margin-bottom: 10px;
+    }
+    .content-right .roles .main-apps .AP .app-info h2{
+        font-size: 5px;
+    }
+    .content-right .roles .main-apps .AP .app-info p{
+        font-size: 4px;
+    }
+    .content-right .roles .main-apps .AP .iconify{
+        font-size: 12px;
+    }
+    .content-right .roles .main-apps .AP .app-info.figma{
+        font-size: 22px;
+    }
+
+    .content-right .roles .main-skill{
+        font-size: 10px;
+        position: relative;
+        left: -5px;
+        top: -2px;
+        margin: 0px 4px;
+    }      
+
+    /* content right */
+
+
+    .profile,
+    .about,
+    .roles {
+        width: 100%;
+        height: 160px; 
+        background-color: var(--secondary-color); 
+        margin-bottom: 20px; 
+        border-radius: 10px; 
+    }
+    .profile {
+        height: 340px;
+        position: relative;
+        left: 10px;
+    }
+
+     /* contact */
+
+}

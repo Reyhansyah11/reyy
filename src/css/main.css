@@ -1,0 +1,1073 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+  }
+  
+  :root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: var(--White);
+  
+    --orange: hsl(35, 80%, 50%);
+    --white: hsl(0, 0%, 100%);
+    --WHITE: hsl(0, 0%, 100%);
+    --BLACK: hsl(0, 0%, 0%);
+    --black-90: hsl(0, 0%, 10%);
+    --black-70: hsl(0, 0%, 30%);
+    --black-alpha-40: hsla(0, 0%, 0%, 0.4);
+    --color-1: #00C82C;
+    --color-2: #C80000;
+    --color-3: #C4C800;
+    --color-4: #9400C8;
+    --select-box-bg-color: hsl(0, 0%, 100%);
+    --border-box-1: hsl(0, 0%, 90%);
+    --border-color-1: hsl(240, 9%, 25%);
+    --border-color-2: hsl(240, 9%, 30%);
+    
+    --primary-color: #003d99;
+    --primary-sdw: #0075FF;
+    --secondary-color: #E4E4E4;
+    --White: #FFFFFF;
+    --sdw: rgba(0, 0, 0, 0.34);
+  }
+  
+  .bacground{
+    background-color: var(--primary-color);
+  }
+  .primary{
+    color: var(--primary-color);
+  }
+  .btn-primary{
+    color: rgba(255, 255, 255, 0.69);;
+    background-color: var(--primary-color);
+    border: 1.5px solid var(--primary-color);
+    border-radius: 50px;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding: 4px 12px;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+  }
+  .btn-primary:hover {
+    background-color: var(--White);
+    border: 1.5px solid var(--primary-color);
+    color: var(--primary-color);
+    font-weight: 500;
+  }
+  
+  .btn-secondary{
+    color: var(--black-70);
+    background-color: var(--White);
+    border: 1.5px solid var(--primary-color);
+    border-radius: 50px;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding: 6px 12px;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+  }
+  .btn-secondary:hover {
+    background-color: var(--primary-sdw);
+    border: 1.5px solid var(--White);
+    color: var(--White);
+    font-weight: 600;
+  }
+  
+  body {
+    margin: 0;
+    min-height: 100vh;
+    color: black;
+  }
+  
+  /* navbar */
+  .navbar {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: var(--BLACK);
+    font-size: 20px;
+    background-color: rgba(228, 228, 228, .7); /* Warna dengan opasitas 69% */
+    position: fixed; /* Navbar tetap pada posisi yang sama */
+    top: 0; /* Navbar menempel di bagian atas layar */
+    width: 100%; /* Lebar navbar 100% dari layar */
+    z-index: 1000; /* Menetapkan indeks tumpukan z agar navbar berada di atas konten lain */
+    /* border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px; */
+    box-shadow: 0 5px 20px var(--black-alpha-40);
+  }
+  .navbar .navbar-logo{
+    color: var(--BLACK);
+    padding: 10px;
+    position: relative;
+    left: 50px;
+    font-weight: bold;
+    cursor: text;
+    font-family: 'Poppins', sans-serif;
+  }
+  .navbar .navbar-logo span{
+    color: var(--primary-sdw);
+  }
+  
+  .navbar-nav {
+    display: flex; /* Mengubah navbar-nav menjadi flex container */
+    list-style: none;
+    padding: 0;
+    position: relative;
+    right: 50px;
+  }
+  
+  .navbar .navbar-nav .nav-link{
+    color: var(--BLACK);
+    text-decoration: none;
+    margin-left: 80px;
+    font-family: 'Urbutus Slab', serif;
+  }
+  .navbar .navbar-nav .nav-link:hover {
+    color: var(--primary-sdw);
+  }
+  
+  .navbar .navbar-nav .nav-link::after{
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    font-weight: bold;
+    border-bottom: 0.1rem solid var(--primary-sdw);
+    transform: scaleX(0);
+    transition: 0.3s linear;
+  }
+  .navbar .navbar-nav .nav-link:hover::after{
+    transform: scaleX(0.5);
+  }
+
+  .close-menu {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1002; /* Ensure close icon is above the menu */
+  }
+
+  .navbar-hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    z-index: 1001; /* Ensure hamburger icon is above the menu */
+  }
+  
+  /* navbar */
+  
+  /* hero section */
+.hero-section {
+  display: flex;
+  margin-top: 150px;
+  padding: 20px;
+}
+
+.hero-left {
+  flex: 1.8; 
+  padding: 10px;
+  margin: 0 50px;
+  color: var(--black-90);
+  position: relative;
+  top: 45px;
+  right: -50px;
+}
+.hero-left h1{
+  color: var(--primary-color);
+  margin-bottom: 10px;
+  font-size: 36px;
+  font-family: 'Roboto', sans-serif;
+}
+.hero-left .special{
+  font-family: 'Poppins', sans-serif;
+}
+.hero-left .special span{
+  color: var(--primary-sdw);
+  font-weight: bold;
+}
+.hero-left .special .typing-text{
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0;
+  letter-spacing: .15em;
+  animation: typing 3s steps(20, end), blink-caret .75s step-end infinite;
+  position: relative;
+  top: 4px;
+  font-size: 12px;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 50% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+}
+
+/* Mengabaikan efek animasi pada tombol */
+.btn-primary {
+  animation: none;
+}
+
+.hero-left .dis{
+  color: var(--black-70);
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 12px;
+}
+.btn {
+  position: relative;
+  top: 20px;
+}
+
+.hero-right {
+  flex: 2;
+  padding: 20px;
+  position: relative;
+  left: -50px;
+}
+
+.heroimage1,
+.heroimage2,
+.heroimage3 {
+  width: 210px; /* Menetapkan lebar gambar */
+  height: auto; /* Mengatur tinggi agar sesuai proporsi */
+  position: absolute;
+  top: 70%; /* Menempatkan gambar di tengah vertikal */
+  transform: translateY(-50%); /* Menyesuaikan posisi vertikal */
+}
+
+.heroimage1 {
+  left: 70px;
+}
+
+.heroimage2 {
+  left: 50%; /* Menempatkan gambar 2 di tengah horizontal */
+  transform: translateX(-50%) translateY(-50%); /* Menyesuaikan posisi horizontal dan vertikal */
+  z-index: 1; /* Menetapkan z-index gambar 2 agar berada di depan */
+}
+
+.heroimage3 {
+  right: 70px;
+  z-index: -1; /* Menetapkan z-index gambar 3 agar berada di belakang */
+}
+
+/* hero section */
+
+/* experience */
+.experience{
+  display: flex;
+  margin-top: 200px;
+  color: var(--black-70);
+  box-shadow: 0 0 10px 3px var(--black-alpha-40);
+  background-color: var(--secondary-color);
+}
+
+.experience .information{
+  flex: 2; 
+  padding: 40px;
+  margin: 0 50px;
+  color: var(--black-90);
+  position: relative;
+  top: 10px;
+  right: -50px;
+}
+.experience .information .opsi{
+  display: flex; /* Mengubah konten menjadi flex container */
+  align-items: center; /* Mengatur elemen secara vertikal di tengah */
+  margin-right: 20px; /* Jarak antara setiap item */
+  background-color: var(--White);
+  color: var(--BLACK);
+  width: 400px;
+  height: 75px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.07);
+  
+}
+.experience .information .opsi p{
+  margin-left: 80px;
+  text-align: center;
+  font-weight: bold
+}
+.experience .information .opsi span{
+  margin-left: 80px;
+  text-align: center;
+  font-weight: bold;
+}
+.experience .information .opsi .a{
+  margin-left: 70px;
+  text-align: center;
+  font-weight: bold;
+}
+.experience .information .opsi .b{
+  margin-left: 135px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.project-count {
+  position: absolute;
+  left: 80px; /* Atur posisi untuk project count */
+  top: 25px; /* Sesuaikan posisi secara vertikal */
+}
+.experience .information .opsi .logo{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--black-90);
+  position: relative;
+  left: 30px;
+  color: var(--White);
+}
+.experience .information .opsi .logo .fa-solid {
+  position: absolute;
+  top: 14px;
+  left: 11px;
+  font-size: 25px;
+}
+.experience .information .opsi .logo .fa-brands{
+  position: absolute;
+  top: 13px;
+  left: 16px;
+  font-size: 25px;
+}
+.experience .information .opsi .logo .fa-code{
+  position: absolute;
+  top: 12px;
+  left: 9px;
+  font-size: 25px;
+}
+
+.experience .help{
+  flex: 1.2;
+  padding: 40px;
+  position: relative;
+  left: -100px;
+  top: 20px;
+}
+.experience .help h1{
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+  left: -40px;
+  color: var(--BLACK);
+}
+.experience .help p{
+  font-size:13px ;
+  margin-bottom: 10px;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between; /* Mengatur jarak antara elemen menjadi seimbang */
+  align-items: center; /* Menyamakan tinggi elemen */
+  margin-top: 20px;
+  color: var(--BLACK);
+}
+
+.complate,
+.on-going {
+  flex: 1; /* Memungkinkan elemen untuk mengambil ruang yang tersisa */
+  position: relative;
+  top: -10px;
+}
+.box
+.complate p,
+.box
+.on-going p{
+  flex: 1; /* Memungkinkan elemen untuk mengambil ruang yang tersisa */
+  font-size: 13px;
+  font-weight: 500;
+}
+.complate h2,
+.on-going h2{
+  flex: 1; /* Memungkinkan elemen untuk mengambil ruang yang tersisa */
+  font-size: 30px;
+}
+
+.complate {
+  margin-right: 10px; /* Mengatur jarak antara elemen */
+  position: relative;
+}
+.on-going {
+  position: relative;
+  left: -30px;
+}
+
+/* experience */
+
+/* Portfolio Section */
+
+.section-portfolio{
+  margin-top: 120px;
+  padding: 10px 50px;
+}
+
+.section-portfolio .project-content .title {
+  width: 450px;
+  position: relative;
+  left: 60px;
+}
+.section-portfolio .project-content .title h1{
+  margin-bottom: 5px;
+}
+
+.section-portfolio .project-content .title .dis{
+  font-weight: 700;
+  color: var(--black-70);
+}
+
+.section-portfolio .project-content .explore{
+  position: relative;
+  top: 170px;
+  left: 190px;
+  background-color: var(--White);
+  color: var(--black-70);
+  border-bottom: 1.5px solid var(--black-70);
+  z-index: 1;
+}
+.section-portfolio .project-content .explore a{
+  background-color: var(--White);
+  color: var(--black-70);
+  border-bottom: 1.5px solid var(--black-70);
+}
+.section-portfolio .project-content .explore a:hover{
+  background-color: var(--White);
+  color: var(--primary-sdw);
+  border-bottom: 1.5px solid var(--primary-sdw);
+  cursor: pointer;
+}
+
+
+.section-portfolio .project-content .explore i{
+  margin-left: 10px;
+}
+
+
+/* box.content */
+
+.project {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  right: 120px;
+  top: -150px;
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.box-content {
+  width: 300px;
+  height: 400px;
+  background-color: var(--White);
+  margin: 20px;
+  box-shadow: -10px 7px 20px 5px var(--black-alpha-40); 
+}
+
+.mini-games {
+  position: absolute;
+  bottom: 150px;
+  right: 490px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--BLACK);
+  padding-top: 190px;
+}
+
+
+.big-project {
+  margin-bottom: 70px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--BLACK);
+  padding-top: 50%;
+}
+
+.comingsoon {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  padding-top: 50%;
+  color: var(--black-70);
+}
+
+/* box.content */
+.tittle-prc{
+  width: 550px;
+  position: relative;
+  top: -230px;
+  left: 80px;
+}
+.tittle-prc .in-p{
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.tittle-prc p{
+  font-size: 14px;
+  color: var(--black-70);
+}
+
+/* work proses */
+
+.work-prcss {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+  top: -150px;
+  padding: 0 20px;
+}
+
+.prcss-box {
+  width: calc(33.33% - 20px); /* Lebar sekitar 33% dari parent container dengan jarak 20px antara kotak */
+  padding: 20px 0;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+.prcss-box h1{
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.prcss-box p{
+  font-size: 10px;
+}
+.prcss-box:nth-child(1) {
+  border-bottom: 3px solid var(--color-1);
+}
+
+.prcss-box:nth-child(2) {
+  border-bottom: 3px solid var(--color-2);
+}
+
+.prcss-box:nth-child(3) {
+  border-bottom: 3px solid var(--color-3);
+}
+
+.prcss-box:nth-child(4) {
+  border-bottom: 3px solid var(--color-4);
+  position: relative;
+  left: 60px;
+}
+
+.prcss-box:nth-child(5) {
+  border-bottom: 3px solid var(--color-1); /* Warna garis bawah untuk kotak 5 */
+  position: relative;
+  right: 60px;
+}
+
+
+.prcss-box:nth-child(4),
+.prcss-box:nth-child(5) {
+  flex-basis: 33.33%; /* Lebar kotak ke-4 dan ke-5 */
+  margin-left: auto; /* Geser kotak ke-5 ke kanan */
+  margin-right: auto; /* Geser kotak ke-5 ke kiri */
+}
+
+@media screen and (max-width: 768px) {
+  .work-prcss {
+    flex-direction: column;
+  }
+
+  .prcss-box {
+    width: 100%; 
+  }
+
+  .prcss-box:nth-child(4),
+  .prcss-box:nth-child(5) {
+    width: 100%; 
+    margin-left: 0; 
+    margin-right: 0;
+  }
+}
+
+/* work proses */
+
+/* Portfolio Section */
+
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Menyesuaikan konten agar sejajar pada bagian atas */
+  color: var(--White); 
+  position: relative;
+  bottom: 70px;
+}
+
+/* content left */
+
+.content-left {
+  width: 50%;
+  padding: 20px;
+  margin-left: 100px;
+  text-align: center;
+}
+.about-section .content-left .profile .photo .photo-profile{
+  width: 350px;
+  margin-bottom: 40px;
+  position: relative;
+  left: 20px;
+  top: -10px;
+}
+.about-section .content-left .profile .info-content{
+  text-align: center;
+  color: var(--BLACK);
+}
+.about-section .content-left .profile .info-content .gmail{
+  color: var(--black-70);
+  font-weight: 500;
+}
+.about-section .content-left .profile .info-content .gmail:hover{
+  color: var(--primary-sdw);
+}
+.about-section .content-left .profile .button{
+  margin-top: 40px;
+}
+.about-section .content-left .profile .button .bx{
+  margin-left: 10px;
+}
+
+/* content left */
+
+
+/* content right */
+
+.content-right {
+  width: 50%;
+  padding: 20px;
+  margin-right: 100px;
+}
+.content-right .about{
+  padding: 20px;
+}
+.content-right .about h1{
+  font-size: 32px;
+  font-family: 'Urbutus Slab', serif;
+  color: var(--BLACK);
+}
+.content-right .about .icon{
+  color: var(--color-1);
+  margin-top: 8px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.content-right .about .icon .bx{
+  position: relative;
+  top: 1px;
+  margin-right: 7px;
+}
+.content-right .about .about-me-content p{
+  line-height: 25px;
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--black-70);
+  margin-bottom: 15px;
+}
+
+.content-right .roles{
+  padding: 20px;
+  padding-left: 25px;
+}
+.content-right .roles h1{
+  font-size: 32px;
+  font-family: 'Urbutus Slab', serif;
+  margin-bottom: 20px;
+  color: var(--BLACK);
+}
+.content-right .roles .main-apps h3{
+  font-size: 14px;
+  font-family: 'Urbutus Slab', serif;
+  margin-bottom: 15px;
+  color: var(--BLACK);
+}
+
+.content-right .roles .main-apps .AP {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.content-right .roles .main-apps .AP .iconify{
+  font-size: 36px;
+}
+.content-right .roles .main-apps .AP .app-info.figma{
+  font-size: 36px;
+  margin-left: 42px;
+}
+.content-right .roles .main-apps .AP .app-info{
+  margin-left: 30px;
+  font-family: 'Poppins', sans-serif;
+}
+.content-right .roles .main-apps .AP .app-info h2{
+  font-size: 16px;
+  color: var(--BLACK);
+}
+.content-right .roles .main-apps .AP .app-info p{
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--black-70);
+}
+
+.content-right .roles .skill h3{
+  font-size: 14px;
+  font-family: 'Urbutus Slab', serif;
+  margin-bottom: 15px;
+  margin-top: 20px;
+  color: var(--BLACK);
+}
+.content-right .roles .main-skill{
+  display: inline-flex; 
+  align-items: center; 
+  margin-right: 10px;
+  font-size: 32px;
+  margin-left: 10px;
+  position: relative;
+  right: 10px;
+}
+
+/* content right */
+
+.profile,
+.about,
+.roles {
+  width: 100%;
+  height: 300px; 
+  background-color: var(--secondary-color); 
+  margin-bottom: 20px; 
+  border-radius: 10px; 
+}
+
+.profile {
+  order: 1; /* Mengatur urutan */
+  height: 640px;
+}
+
+.about {
+  order: 2; /* Mengatur urutan */
+  margin-bottom: 40px;
+}
+
+.roles {
+  order: 3; /* Mengatur urutan */
+}
+
+/* about section */
+
+/* footer */
+.footer {
+  background-color: rgba(228, 228, 228, .7);;
+  padding: 15px;
+  box-shadow: 0 5px 20px var(--black-alpha-40);
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: var(--black-70);
+}
+/* footer */
+
+
+/* contact */
+.head{
+  width: 200px;
+  height: 30px;
+  background-color: var(--White);
+  border: 1.2px solid var(--primary-color);
+  position: relative;
+  top: -65px;
+  left: 42%;
+  z-index: 10;
+  border-radius: 50px;
+  padding: 5px 0;
+  color: var(--black-70);
+  font-family: 'inter', sans-serif;
+  text-align: center;
+  font-weight: 600;
+}
+
+.a-con{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--primary-sdw);
+  position: relative;
+  color: var(--White);
+  text-align: center;
+  padding-top: 13px;
+  left: -20px;
+}
+.a-con .fas{
+  font-size: 22px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 50px;
+  background-color: var(--White);
+  border-radius: 5px;
+  box-shadow: 8px 12px 10px 0 rgba(0, 0, 0, .4);
+  position: relative;
+  top: 100px;
+  border-left: 1px solid var(--primary-color); /* Border kiri */
+  border-top: 1px solid var(--primary-color); /* Border atas */
+  border-right: 1px solid var(--primary-sdw); /* Border kanan*/
+  border-bottom: 1px solid var(--primary-sdw); /* Border bawah */
+  margin-bottom: 200px;
+}
+
+
+
+.left {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.right {
+  flex: 1;
+  padding-left: 20px;
+  position: relative;
+  right: 50px;
+}
+.right h2{
+  position: relative;
+  top: -5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 30px;
+}
+
+
+input,
+textarea {
+  padding: 10px;
+  margin-bottom: 30px;
+  border: 2px solid var(--border-box-1);
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: transparent;
+  box-shadow: 5px 5px 10px var(--black-70);
+  color: var(--BLACK);
+}
+
+.button-1 {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  position: relative;
+  top: -5px;
+}
+
+.button-1:hover {
+  background-color: #0056b3;
+}
+
+.contact-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center; /* Mengatur konten berada di tengah secara vertikal */
+  margin-bottom: 30px;
+  position: relative;
+  top: 82px;
+  margin-left: 10px;
+  right: 150px;
+}
+.contact-item a{
+  cursor: pointer;
+}
+
+.contact-item > div {
+  flex: 1; /* Agar teks dapat mengambil sisa ruang */
+}
+
+.contact-item h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+.contact-item p{
+  font-size: 11px;
+}
+
+.contact-item h3,
+.contact-item p {
+  margin: 0;
+}
+
+/* contact */
+
+
+
+/*servis*/
+.services {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  min-height: 100vh;
+}
+
+.services-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Mengatur grid menjadi tiga kolom */
+  gap: 2.5rem;
+  margin-top: 5rem;
+  padding-bottom: 50px;
+  justify-content: center; /* Mengatur kotak ke tengah secara horizontal */
+}
+
+.boxx {
+  background-color: var(--primary-sdw);
+  padding: 20px 30px;
+  border-radius: 8px;
+  transition: all .45s ease;
+  text-align: center; /* Menyatukan teks ke tengah kotak */
+  width: 250px;
+  height: 250px;
+  box-shadow: 5px 5px 10px var(--black-70);
+}
+
+.services-content .boxx {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.s-icon i {
+  font-size: 32px;
+  position: relative;
+  top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--White);
+  text-shadow: 2px 2px 4px var(--black-70);
+}
+
+.boxx h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--White);
+  position: relative;
+  top: 90px;
+  text-align: center;
+  text-shadow: 2px 2px 4px var(--black-70);
+}
+
+.boxx:hover {
+  transform: translateY(-8px);
+  cursor: pointer;
+}
+/*servis*/
+
+/* .mini-games */
+
+.main-text{
+  text-align: center;
+  position: relative;
+  top: 130px;
+}
+.main-text h2 span{
+  color: var(--primary-sdw);
+}
+
+.portfolio-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  min-height: 100vh;
+  position: relative;
+  top: 20px;
+  margin-bottom: -30px;
+}
+
+.row {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.portfolio-content .row img {
+  width: 100%;
+  height: 15rem;
+  border-radius: 8px;
+  display: block;
+  transition: transform 0.5s;
+}
+
+.layer {
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), #0075FF);
+  position: absolute;
+  border-radius: 8px;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 40px;
+  transition: height 0.5s;
+}
+
+
+.layer i {
+  color: var(--BLACK);
+  margin-top: 20px;
+  font-size: 20px;
+  background: var(--White);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.row:hover img {
+  transform: scale(1.1);
+}
+
+.row:hover .layer {
+  height: 100%;
+}
+/* .mini-games */
+
+
