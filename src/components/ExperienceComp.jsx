@@ -22,10 +22,10 @@ function ExperienceComp() {
         <div className="help">
           <h1>What we do help ?</h1>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae earum mollitia consectetur debitis ipsam laboriosam illo ducimus?
+          We offer comprehensive solutions in web development, ensuring seamless functionality and user satisfaction across all devices and platforms.
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias sequi soluta reprehenderit?
+          Our expertise in UI/UX design guarantees intuitive and visually appealing interfaces, enhancing user engagement and overall experience.
           </p>
           <div className="box">
           <div className='complate'>

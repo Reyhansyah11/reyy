@@ -9,7 +9,7 @@ function ProjectComp() {
           <div className="title">
             <p className='dis'>- PORTFOLIO </p>
             <h1>All Creative Works, Selected Project.</h1>
-            <p>sed ut perspiciatis unde omnis iste natus error sit ptatem accusantium.</p>
+            <p>Yet, to chase dreams, we must embrace challenges and the required journey.</p>
           </div>
 
           <button className='explore'>
@@ -36,31 +36,31 @@ function ProjectComp() {
           <div className="prcss-box">
             <h1>01./DISCOVERY</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.
+            Understanding project requirements and gathering essential information for a successful outcome.
             </p>
           </div>
           <div className="prcss-box">
           <h1>02./STRATEGY</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.
+            Developing a clear plan and strategy to ensure all objectives are met efficiently and effectively.
             </p>
           </div>
           <div className="prcss-box">
           <h1>03./DESIGN</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.
+            Creating visually appealing and user-friendly designs that enhance user experience and engagement.
             </p>
           </div>
           <div className="prcss-box">
           <h1>04./DEBUG</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.  Sed do eiusmod tempor incididunt ut labore.
+            Identifying and fixing issues in the code to ensure the application runs smoothly and without errors.
             </p>
           </div>
           <div className="prcss-box">
           <h1>05./TESTER</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.  Sed do eiusmod tempor incididunt ut labore.
+            Thoroughly testing the application to guarantee functionality and performance before deployment.
             </p>
           </div>
         </div>

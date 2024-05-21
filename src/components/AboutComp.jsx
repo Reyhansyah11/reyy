@@ -22,10 +22,10 @@ function AboutComp() {
               <p className='icon'> <i className='bx bx-badge-check bx-flashing' ></i> Open to Work</p>
               <div className="about-me-content">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                My name is Reyhan, an 11th-grade student at SMKN 1 Banjar specializing in Software Engineering. I have a passion for creating innovative software solutions and improving my coding skills.
                 </p>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                Outside of academics, I enjoy playing badminton to stay active and focused. Welcome to my portfolio, where I showcase my projects and share my journey in technology.
                 </p>
               </div>
             </div>
