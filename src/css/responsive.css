@@ -1898,7 +1898,12 @@ textarea {
         margin-top: 50px;
     }
 
-      /* content left */          
+      /* content left */   
+    
+    .content-left {
+        margin-left: 10px;
+    }
+    
     .about-section .content-left .profile .photo .photo-profile{
         width: 140px;
         position: relative;
