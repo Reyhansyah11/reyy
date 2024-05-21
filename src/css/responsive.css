@@ -463,6 +463,9 @@
     .navbar .navbar-logo{
         font-size: 16px;
     }
+    .close-menu {
+        top: 9px;
+    }
 
     /* hero */
 
@@ -920,6 +923,9 @@ textarea {
 
 
 @media(max-width: 500px){
+    .close-menu {
+        top: 10px;
+      }
 
     /* hero */
     .hero-section {
@@ -1249,7 +1255,7 @@ textarea {
     .container{
         max-width: 340px;
         position: relative;
-        top: 340px;
+        top: 200px;
         height: 300px;
     }
 
@@ -1714,10 +1720,6 @@ textarea {
 
      /* contact */
 
-    .sec-contact{
-        height: 100vh;
-    }
-
      .head{
         position: absolute;
         top: -4%;
@@ -1731,7 +1733,7 @@ textarea {
     .container{
         max-width: 340px;
         position: relative;
-        top: 140px;
+        top: 240px;
         height: 300px;
     }
 
@@ -1803,8 +1805,6 @@ textarea {
     /* contact */
 
     .footer {
-        position: relative;
-        top: 48px;
         padding: 10px;
     }
     .footer p{
@@ -2014,5 +2014,15 @@ textarea {
     }
 
      /* contact */
+     .container{
+        max-width: 340px;
+        position: relative;
+        top: 340px;
+        height: 300px;
+    }
+
+     .footer {
+        padding: 10px;
+    }
 
 }
