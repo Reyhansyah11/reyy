@@ -786,6 +786,10 @@
 
 
 /* contact */
+.contacttt{
+  min-height: 100vh;
+}
+
 .head{
   width: 200px;
   height: 30px;

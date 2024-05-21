@@ -1235,9 +1235,6 @@ textarea {
 
      /* contact */
 
-    .sec-contact{
-        height: 100vh;
-    }
 
      .head{
         position: absolute;
@@ -1252,7 +1249,7 @@ textarea {
     .container{
         max-width: 340px;
         position: relative;
-        top: 140px;
+        top: 340px;
         height: 300px;
     }
 
@@ -1326,8 +1323,6 @@ textarea {
     /* contact */
 
     .footer {
-        position: relative;
-        top: 98px;
         padding: 10px;
     }
     .footer p{
@@ -1341,16 +1336,16 @@ textarea {
     }
 
     .boxx {
-        width: 140px;
-        height: 140px;
+        width: 100px;
+        height: 100px;
     }
     .s-icon i {
-        top: 30px;
-        font-size: 22px;
+        top: 15px;
+        font-size: 16px;
     }
     .boxx h3 {
-        top: 50px;
-        font-size: 13px;
+        top: 30px;
+        font-size: 6.5px;
     }
     /* services */
 
@@ -1583,7 +1578,7 @@ textarea {
     /* portfolio */
 
     .about-section {
-        display: none;
+        display: flex;
         justify-content: space-between;
         align-items: flex-start; /* Menyesuaikan konten agar sejajar pada bagian atas */
         color: var(--White); 
@@ -1594,9 +1589,7 @@ textarea {
 
       /* content left */          
     .content-left {
-        width: 50%;
-        padding: 20px;
-        margin-left: -5px;
+        margin-left: 0px;
     }
     .about-section .content-left .profile .photo .photo-profile{
         width: 160px;
@@ -1903,7 +1896,6 @@ textarea {
     .content-left {
         margin-left: 0px;
         position: relative;
-        left: -100px;
     }
     
     .about-section .content-left .profile .photo .photo-profile{
