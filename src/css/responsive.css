@@ -1097,7 +1097,7 @@ textarea {
     /* portfolio */
 
     .about-section {
-        display: flex;
+        display: none;
         justify-content: space-between;
         align-items: flex-start; /* Menyesuaikan konten agar sejajar pada bagian atas */
         color: var(--White); 
@@ -1583,7 +1583,7 @@ textarea {
     /* portfolio */
 
     .about-section {
-        display: flex;
+        display: none;
         justify-content: space-between;
         align-items: flex-start; /* Menyesuaikan konten agar sejajar pada bagian atas */
         color: var(--White); 
@@ -1889,7 +1889,7 @@ textarea {
 
 @media(max-width: 362px){
     .about-section {
-        display: none;
+        display: flex;
         justify-content: space-between;
         align-items: flex-start; /* Menyesuaikan konten agar sejajar pada bagian atas */
         color: var(--White); 
